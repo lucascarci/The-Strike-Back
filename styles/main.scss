@@ -1,0 +1,319 @@
+$mani: #E30000;
+$gry: #4A4A4A;
+$gry2: #9B9B9B;
+
+@mixin e($element) {
+	&__#{$element} {
+		@content
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+:root {
+	font-size: 16px;
+}
+
+body,html {
+	font-family: "HN-Med", Arial ,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+.red-square {
+	width: 195px;
+	height: 160px;
+	position: absolute;
+	transform: rotate(-212deg);
+	top: -80px;
+	float: left;
+	background-color: $mani;
+}
+
+
+.nav {
+	height: 60px;
+
+
+
+	@include e('logo') {
+		letter-spacing: -0.087rem;
+		font-family: "HN-Bold", sans-serif;
+		font-size: 2.75rem;
+		float: left;
+		top: 20px;
+		position: relative;
+	}
+	@include e('list') {
+		list-style-type: none;
+		padding: 0;
+		display: inline;
+		float: right;
+		top: 20px;
+		position: relative;
+
+		@include m('item') {
+			padding-left: 20px;
+			display: inline;
+			font-size: 14px;
+
+			a:link {
+				text-decoration: none;
+				color: $gry2;
+			}
+			a:visited {
+				color: $gry2;
+			}
+			a:hover {
+				color: black;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+.main-container {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.sub-container {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	max-width: 1000px;
+	// background-color: hsl(320,100,50);
+}
+
+.manifesto {
+	background-color:  $mani;
+	color: #fff;
+
+	hr {
+		background-color: #fff;
+	}
+}
+
+.preface, .scheduling {
+	background-color: #F7F7F7;
+}
+
+// .prologue {
+// 	background-image: url(../img/background.png);
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+
+
+// }
+
+.media-kit {
+	width: 100px;
+	height: 45px;
+	background-color: $mani;
+	color: #fff;
+	float: left;
+	text-align: center;
+	line-height: 2.8rem;
+
+}
+
+.section {
+	height: 100vh;
+	// max-height: 800px;
+	width: 100%;
+	// outline-offset: -1px;
+	// border: 1px solid black;
+	// background-color: hsl(0,0,90);
+
+	@include e('list') {
+		padding: 0;
+		width: 50%;
+		list-style-type: none;
+		color: $gry2;
+		float: left; 
+
+		@include m('social') {
+			width:100%;
+		}
+
+		@include m('item') {
+			display: block;
+			margin: 3px 0 3px 0;
+
+			a:link {
+				color: $gry;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;		
+			}
+			a:hover {
+				color: red;
+			}
+
+		}
+
+		@include m('head') {
+			padding: 0 0 10px 0;
+			font-family: "hn-Bold", Arial, sans-serif;
+			color: black;
+		}
+	}
+	
+	@include e('column') {
+		width: 50%;
+		height: 100%;
+		float: left;
+
+		@include m('connect') {
+			width: 30%;
+			float: right;
+		}
+
+
+		@include m('heading') {
+			font-size: 2.5rem;
+			font-family: "HN-Bold", sans-serif;
+			letter-spacing: -0.07rem;
+		}
+		
+		@include m('subheading') {
+			font-family: "HN-Med", sans-serif;
+			font-size: 0.9375rem;
+		}
+
+		@include m('break') {
+			width: 100%;
+			height: 2px;
+			border: none;
+			// background-color: $gry2;
+			background-color: $mani;
+		}
+		@include m('body') {
+			font-family: "HN-Bold", sans-serif;
+			letter-spacing: -0.05px;
+			font-size: 1.125rem;
+			padding-bottom: 20px;
+		}
+
+		@include m('vertical') {
+			padding-top: 30vh
+		}
+
+	}
+}
+
+
+
+.schedule-main {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.today-session {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.upcoming {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.session {
+	float: right;
+	width: 450px;
+	height: 80px;
+
+	@include e('column-1') {
+		float: left;
+		width: 25%;
+		height: 70px;
+		background-color: #999;
+	}
+	@include e('column-2') {
+		float: left;
+		width: 5%;
+		height: 70px;
+		background-color: #999;
+	}
+	@include e('column-3') {
+		float: left;
+		width: 70%;
+		height: 70px;
+		background-color: #999;
+	} 
+
+
+	@include e('day') {
+
+	}
+	@include e('time') {
+
+	}
+	@include e('vertical-line') {
+		width: 2px;
+		height: 55px;
+		background-color: black;
+		border: none;
+	}
+	@include e('title') {
+
+	}
+	@include e('instructors') {
+
+	}
+	@include e('room') {
+
+	}
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
