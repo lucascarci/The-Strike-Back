@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head> 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>The Strike Back</title>
 		<link rel="stylesheet" href="styles/fonts/stylesheet.css">
 		<link rel="stylesheet" href="styles/main.css">
 	</head>
-	<body>
+	<body onload="weekdays();">
 	
 	<div class="main-container">
 
@@ -83,7 +83,7 @@
 
 		<div class="section scheduling" id="scheduling">
 			<div class="sub-container">
-				<div class="section__column--heading">Scheduling</div>
+				<div class="section__column--heading sched">Scheduling</div>
 					<div class="section__column--subheading">Who what when and where</div>
 					<hr class="section__column--break">
 
@@ -91,44 +91,37 @@
 					<div class="schedule-main" id="schedule">
 						<div class="today-session">
 
+						
+							<div id="session-container" class="s-today">
+								<div id="cov-photo" class="s-today__cover-photo"></div>
+								<div class="s-today__info-bar">
+									<div class="s-today__column-1">
+										<div id="s-day" class="s-today__day">—</div>
+										<div id="s-time" class="s-today__time">—</div>
+									</div>
 
+									<div class="s-today__column-2">
+										<hr class="s-today__vertical-line">
+									</div>
 
-
-
-							<div class="session">
-								<div class="session__column-1">
-									<div class="session__day">Tuesdays</div>
-									<div class="session__time">2:00<span class="session__small-caps">PM</span></div>
-								</div>
-								<div class="session__column-2">
-									<hr class="session__vertical-line">
-								</div>
-								<div class="session__column-3">
-									<div class="session__title">javascript: swoop em with the oop</div>
-									<div class="session__instructors">Kaspar So &amp; Hubert Si</div>
-									<div class="session__room">Room J220</div>
+									<div class="s-today__column-3">
+										<div id="s-title" class="s-today__title">—</div>
+										<div id="s-instructors" class="s-today__instructors">—</div>
+										<div id="s-room" class="s-today__room">—</div>
+									</div>
 								</div>
 							</div>
-
-							<!-- ADJUST SECTION ^^^^^ SO THAT IT HAS UNIQUE IDs WHEN INSERTING DATA FROM OTHER AREAS -->
-
-
-
 
 
 
 						</div>
 
-						<div class="upcoming" id="upcoming-sessions">
-
-
-
-
-
+						<div class="upcoming" id="up-sessions">
+							
 							<div class="session">
 								<div class="session__column-1">
 									<div class="session__day">Tuesdays</div>
-									<div class="session__time">2:00<span class="session__small-caps">PM</span></div>
+									<div class="session__time">1:00<span>PM</span></div>
 								</div>
 								<div class="session__column-2">
 									<hr class="session__vertical-line">
@@ -140,8 +133,80 @@
 								</div>
 							</div>
 
+							<div class="session">
+								<div class="session__column-1">
+									<div class="session__day">Tuesdays</div>
+									<div class="session__time">3:00<span>PM</span></div>
+								</div>
+								<div class="session__column-2">
+									<hr class="session__vertical-line">
+								</div>
+								<div class="session__column-3">
+									<div class="session__title">Markup &amp; Styling</div>
+									<div class="session__instructors">Emma Wootton &amp; JJ Bastida</div>
+									<div class="session__room">Room J218</div>
+								</div>
+							</div>
 
+							<div class="session">
+								<div class="session__column-1">
+									<div class="session__day">Wednesdays</div>
+									<div class="session__time">12:00<span>PM</span></div>
+								</div>
+								<div class="session__column-2">
+									<hr class="session__vertical-line">
+								</div>
+								<div class="session__column-3">
+									<div class="session__title">Mentorship Night</div>
+									<div class="session__instructors">Carol Cheung &amp; Senior IXD Mentors</div>
+									<div class="session__room">Room J208</div>
+								</div>
+							</div>
 
+							<div class="session">
+								<div class="session__column-1">
+									<div class="session__day">Thursdays</div>
+									<div class="session__time">3:00<span>PM</span></div>
+								</div>
+								<div class="session__column-2">
+									<hr class="session__vertical-line">
+								</div>
+								<div class="session__column-3">
+									<div class="session__title">Three to the Jay to the S</div>
+									<div class="session__instructors">Scott Wilson</div>
+									<div class="session__room">Room J220</div>
+								</div>
+							</div>
+
+							<div class="session">
+								<div class="session__column-1">
+									<div class="session__day">Thursdays</div>
+									<div class="session__time">5:30<span>PM</span></div>
+								</div>
+								<div class="session__column-2">
+									<hr class="session__vertical-line">
+								</div>
+								<div class="session__column-3">
+									<div class="session__title">Product: UX/UI</div>
+									<div class="session__instructors">Harmoney Lee &amp; Emma Wootton</div>
+									<div class="session__room">Room J220</div>
+								</div>
+							</div>
+
+							<div class="session">
+								<div class="session__column-1">
+									<div class="session__day">Fridays</div>
+									<div class="session__time">2:00<span>PM</span></div>
+								</div>
+								<div class="session__column-2">
+									<hr class="session__vertical-line">
+								</div>
+								<div class="session__column-3">
+									<div class="session__title">Portfolio Chit Chat</div>
+									<div class="session__instructors">Josh Millard</div>
+									<div class="session__room">Room J208</div>
+								</div>
+							</div>
 							
 
 

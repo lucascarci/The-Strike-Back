@@ -128,7 +128,8 @@ body, html {
   width: 100%;
   height: 100%;
   margin: auto;
-  padding-top: 40px; }
+  padding-top: 20px;
+  letter-spacing: -0.03rem; }
 
 .today-session {
   float: left;
@@ -140,29 +141,109 @@ body, html {
   width: 50%;
   height: 100%; }
 
+.sched {
+  padding-top: 40px; }
+
 .session {
   float: right;
   width: 450px;
-  height: 80px; }
+  height: 75px;
+  padding: 5px; }
   .session__column-1 {
     float: left;
     width: 25%;
     height: 70px;
-    background-color: #999; }
+    text-align: right;
+    line-height: 1.7rem; }
   .session__column-2 {
     float: left;
     width: 5%;
-    height: 70px;
-    background-color: #999; }
+    height: 70px; }
   .session__column-3 {
     float: left;
     width: 70%;
     height: 70px;
-    background-color: #999; }
+    line-height: 1.2rem; }
+  .session__day {
+    font-size: 19px;
+    color: #E30000;
+    font-family: "HN-Bold", Arial, sans-serif;
+    margin-top: 5px; }
+  .session__time {
+    font-size: 30px;
+    color: black;
+    font-family: "HN-Bold", Arial, sans-serif; }
+    .session__time span {
+      font-size: 18px; }
   .session__vertical-line {
-    width: 2px;
-    height: 55px;
+    width: 1px;
+    height: 54px;
     background-color: black;
     border: none; }
+  .session__title {
+    font-size: 15px;
+    color: #E30000;
+    margin-top: 6px; }
+  .session__instructors {
+    font-size: 13px;
+    font-family: "HN-Reg",sans-serif; }
+  .session__room {
+    font-size: 13px;
+    font-family: "HN-Bold"; }
+
+.s-today {
+  width: 480px;
+  height: 480px;
+  background-color: #E30000;
+  margin-top: 12px; }
+  .s-today__info-bar {
+    width: 100%;
+    height: 100px;
+    top: 380px;
+    position: relative;
+    background-color: #e6e6e6; }
+  .s-today__column-1 {
+    float: left;
+    width: 30%;
+    height: 70px;
+    text-align: right;
+    line-height: 1.7rem; }
+  .s-today__column-2 {
+    float: left;
+    width: 8%;
+    height: 70px; }
+  .s-today__column-3 {
+    float: left;
+    width: 62%;
+    height: 70px;
+    line-height: 1.2rem; }
+  .s-today__day {
+    font-size: 27px;
+    color: #E30000;
+    font-family: "HN-Bold", Arial, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 3px; }
+  .s-today__time {
+    font-size: 38px;
+    color: black;
+    font-family: "HN-Bold", Arial, sans-serif; }
+    .s-today__time span {
+      font-size: 26px; }
+  .s-today__vertical-line {
+    width: 1px;
+    height: 74px;
+    margin-top: 12px;
+    background-color: black;
+    border: none; }
+  .s-today__title {
+    font-size: 16px;
+    color: #E30000;
+    margin-top: 17px; }
+  .s-today__instructors {
+    font-size: 14px;
+    font-family: "HN-Reg",sans-serif; }
+  .s-today__room {
+    font-size: 14px;
+    font-family: "HN-Bold"; }
 
 /*# sourceMappingURL=main.css.map */

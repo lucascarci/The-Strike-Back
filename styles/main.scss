@@ -217,11 +217,23 @@ body,html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .schedule-main {
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	padding-top: 40px;
+	padding-top: 20px;
+	letter-spacing: -0.03rem;
 }
 
 .today-session {
@@ -236,57 +248,145 @@ body,html {
 	height: 100%;
 }
 
+.sched {
+	padding-top: 40px;
+}
+
 .session {
 	float: right;
 	width: 450px;
-	height: 80px;
+	height: 75px;
+	padding: 5px;
 
 	@include e('column-1') {
 		float: left;
 		width: 25%;
 		height: 70px;
-		background-color: #999;
+		text-align: right;
+		line-height: 1.7rem;
+	
 	}
 	@include e('column-2') {
 		float: left;
 		width: 5%;
 		height: 70px;
-		background-color: #999;
 	}
 	@include e('column-3') {
 		float: left;
 		width: 70%;
 		height: 70px;
-		background-color: #999;
+		line-height: 1.2rem;
 	} 
-
-
 	@include e('day') {
-
+		font-size: 19px;
+		color: $mani;
+		font-family: "HN-Bold", Arial, sans-serif;
+		margin-top: 5px;
 	}
 	@include e('time') {
+		font-size: 30px;
+		color: black;
+		font-family: "HN-Bold", Arial, sans-serif;
 
+		span {
+			font-size: 18px;
+		}
 	}
 	@include e('vertical-line') {
-		width: 2px;
-		height: 55px;
+		width: 1px;
+		height: 54px;
 		background-color: black;
 		border: none;
 	}
 	@include e('title') {
-
+		font-size: 15px;
+		color: $mani;
+		margin-top: 6px;
 	}
 	@include e('instructors') {
-
+		font-size: 13px;
+		font-family: "HN-Reg",sans-serif;
 	}
 	@include e('room') {
-
+		font-size: 13px;
+		font-family: "HN-Bold";
 	}
 	
 
 
 }
 
+.s-today {
+	width: 480px;
+	height: 480px;
+	background-color: $mani;
+	margin-top: 12px;
+
+	@include e('cover-photo') {
+
+	}
+	@include e('info-bar') {
+		width: 100%;
+		height: 100px;
+		top: 380px;
+		position: relative;
+		background-color: hsl(0,0,90);
+	}
+	@include e('column-1') {
+		float: left;
+		width: 30%;
+		height: 70px;
+		text-align: right;
+		line-height: 1.7rem;
+	}
+	@include e('column-2') {
+		float: left;
+		width: 8%;
+		height: 70px;
+	}
+	@include e('column-3') {
+		float: left;
+		width: 62%;
+		height: 70px;
+		line-height: 1.2rem;
+	}
+	@include e('day') {
+		font-size: 27px;
+		color: $mani;
+		font-family: "HN-Bold", Arial, sans-serif;
+		margin-top: 15px;
+		margin-bottom: 3px;
+	}
+	@include e('time') {
+		font-size: 38px;
+		color: black;
+		font-family: "HN-Bold", Arial, sans-serif;
+
+		span {
+			font-size: 26px;
+		}
+	}
+	@include e('vertical-line') {
+		width: 1px;
+		height: 74px;
+		margin-top: 12px;
+		background-color: black;
+		border: none;
+	}
+	@include e('title') {
+		font-size: 16px;
+		color: $mani;
+		margin-top: 17px;
+	}
+	@include e('instructors') {
+		font-size: 14px;
+		font-family: "HN-Reg",sans-serif;
+	}
+	@include e('room') {
+		font-size: 14px;
+		font-family: "HN-Bold";
+	}
+}
 
 
 
